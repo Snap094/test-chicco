@@ -4,4 +4,13 @@ export default defineNuxtConfig({
         baseURL: '/test-chicco/'
     },
     css: ["~/assets/styles/style.scss"],
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@import "~/assets/styles/variables.scss";@import "~/assets/styles/mixins.scss";@import "~/assets/styles/typography.scss";',
+                },
+            },
+        },
+    },
 })
