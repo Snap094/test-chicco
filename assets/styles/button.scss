@@ -1,0 +1,163 @@
+.button {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  min-width: 40px;
+  gap: 12px;
+  max-width: 100%;
+  border-radius: 90px;
+  border: 0;
+  word-break: break-word;
+  text-align: center;
+  vertical-align: center;
+  transition: background-color .3s linear, opacity .3s linear, border .3s linear, color .3s ease;
+  opacity: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  line-height: 20px;
+
+  &__star {
+    display: none;
+
+    path {
+      transition: .3s ease;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: initial;
+  }
+
+  &_icon-left {
+    flex-direction: row-reverse;
+
+    & .button__star {
+      display: block;
+    }
+  }
+
+  &_icon-right {
+    & .button__star {
+      display: block;
+    }
+  }
+
+  &_small {
+    padding: 12px 16px;
+    height: 40px;
+    &.button_icon-only {
+      padding: 8px;
+    }
+  }
+
+  &_medium {
+    padding: 16px 24px;
+    height: 48px;
+
+    &.button_icon-only {
+      padding: 12px;
+    }
+  }
+
+  &_primary {
+    background-color: yellow;
+
+    & .button__star {
+      path {
+        fill: gray;
+      }
+    }
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:disabled {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), yellow;
+      opacity: 0.5;
+    }
+  }
+
+  &_light {
+    background-color: transparent;
+
+    & .button__star {
+      path {
+        fill: darkgray;
+      }
+    }
+
+    &:hover {
+      background-color: dimgray;
+
+      & .button__star {
+        path {
+          fill: gainsboro;
+        }
+      }
+    }
+
+    &:disabled {
+      background-color: darkblue;
+      opacity: 0.5;
+
+      & .button__star {
+        path {
+          fill: gainsboro;
+        }
+      }
+    }
+  }
+
+  &_dark {
+    border: 2px solid dimgray;
+    background-color: black;
+
+    & .button__star {
+      path {
+        fill: gainsboro;
+      }
+    }
+
+    &:hover {
+      border: 2px solid gainsboro;
+      background-color: gainsboro;
+
+      & .button__star {
+        path {
+          fill: darkblue;
+        }
+      }
+    }
+
+    &:disabled {
+      background-color: gainsboro;
+      border: 2px solid gainsboro;
+      opacity: 0.5;
+
+      & .button__star {
+        path {
+          fill: darkblue;
+        }
+      }
+    }
+  }
+
+  &_icon-only {
+    font-size: 0;
+    gap: 0;
+
+    & .button__star {
+      display: block;
+
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
