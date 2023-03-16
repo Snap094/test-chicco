@@ -1,0 +1,1 @@
+import{a as t,b as s,e as o,r as a,o as n}from"./entry.78d6fde7.js";const c={},_={class:"global-content"},l={class:"content"};function r(e,d){return n(),s("div",_,[o("div",l,[a(e.$slots,"default")])])}const i=t(c,[["render",r]]);export{i as default};
