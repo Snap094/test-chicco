@@ -2,7 +2,9 @@
   <div class="global-content">
     <Header />
     <div class="content">
-      <slot></slot>
+      <div class="site-content">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>

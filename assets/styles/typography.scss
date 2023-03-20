@@ -1,312 +1,97 @@
 //typography
 @mixin typography_hero {
-  font-family: $font-gilroy;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 96px;
-}
+  font: 700 36px/52px $font_playfair;
 
-@mixin typography_head1 {
-  font-family: $font-gilroy;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 64px;
-}
+  @include media-md {
+    font-size: 48px;
+    line-height: 62px;
+  }
 
-@mixin typography_head2 {
-  font-family: $font-gilroy;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
-}
-
-@mixin typography_head3 {
-  font-family: $font-gilroy;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 25px;
-
-
-  @include media-lg {
-    font-size: 40px;
-    line-height: 48px;
+  @include media-xl {
+    font-size: 64px;
+    line-height: 85px;
   }
 }
 
-@mixin typography_head4 {
-  font-family: $font-gilroy;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 25px;
+@mixin typography_subtitle {
+  font: 400 18px/23px $font_open_sans;
 
-  @include media-lg {
-    font-size: 32px;
-    line-height: 40px;
+  @include media-md {
+    font-size: 24px;
+    line-height: 33px;
   }
 }
 
-@mixin typography_body-lg {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.01em;
+@mixin typography_button {
+  font: 700 18px/23px $font_open_sans;
+
+  @include media-md {
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
-@mixin typography_body-lg-bold {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+@mixin typography_product-title {
+  font: 700 18px/23px $font_open_sans;
+
+  @include media-md {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
-@mixin typography_body {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+@mixin typography_product-about {
+  font: 400 18px/23px $font_open_sans;
+
+  @include media-md {
+    line-height: 25px;
+  }
 }
 
-@mixin typography_body-bold {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+@mixin typography_product-price {
+  font: 700 24px/36px $font_open_sans;
+
+  @include media-md {
+    line-height: 33px;
+  }
 }
 
-@mixin typography_caption-text {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
+@mixin typography_link {
+  font: 400 20px/26.5px $font_playfair;
+  letter-spacing: 0.05em;
+  color: $cl_green-100;
+  transition: .3s ease;
 
-@mixin typography_caption-text-bold {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-@mixin typography_text2 {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-}
-
-@mixin typography_text2-bold {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 20px;
-}
-
-@mixin typography_hairline-large {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-
-@mixin typography_hairline-small {
-  font-family: $font-roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 12px;
-  text-transform: uppercase;
-}
-
-@mixin typography_button-default {
-  font-family: $font-gilroy;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-@mixin typography_button-small {
-  font-family: $font-gilroy;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-@mixin typography_form-title {
-  font-family: $font-gilroy;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 25px;
-}
-
-@mixin typography_slider-title {
-  font-family: $font-gilroy-regular;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 40px;
-}
-
-@mixin typography_cl-gray-800 {
-  color: $cl-gray-800;
-}
-
-@mixin typography_cl-gray-700 {
-  color: $cl-gray-700;
-}
-
-@mixin typography_cl-gray-600 {
-  color: $cl-gray-600;
-}
-
-@mixin typography_cl-gray-500 {
-  color: $cl-gray-500;
-}
-
-@mixin typography_cl-gray-400 {
-  color: $cl-gray-400;
-}
-
-@mixin typography_cl-gray-300 {
-  color: $cl-gray-300;
-}
-
-@mixin typography_cl-gray-200 {
-  color: $cl-gray-200;
-}
-
-@mixin typography_cl-gray-100 {
-  color: $cl-gray-100;
-}
-@mixin typography_text-center {
-  text-align: center;
+  &:hover {
+    color: $cl_green-200;
+  }
 }
 
 .typography_hero {
   @include typography_hero
 }
 
-.typography_head1 {
-  @include typography_head1
+.typography_subtitle {
+  @include typography_subtitle
 }
 
-.typography_head2 {
-  @include typography_head2
+.typography_button {
+  @include typography_button
 }
 
-.typography_head3 {
-  @include typography_head3
+.typography_product-title {
+  @include typography_product-title
 }
 
-.typography_head4 {
-  @include typography_head4
+.typography_product-about {
+  @include typography_product-about
 }
 
-.typography_body-lg {
-  @include typography_body-lg
+.typography_product-price {
+  @include typography_product-price
 }
 
-.typography_body-lg-bold {
-  @include typography_body-lg-bold
+.typography_link {
+  @include typography_link
 }
 
-.typography_body {
-  @include typography_body
-}
-
-.typography_body-bold {
-  @include typography_body-bold
-}
-
-.typography_caption-text {
-  @include typography_caption-text
-}
-
-.typography_caption-text-bold {
-  @include typography_caption-text-bold
-}
-
-.typography_text2 {
-  @include typography_text2
-}
-
-.typography_text2-bold {
-  @include typography_text2-bold
-}
-
-.typography_hairline-large {
-  @include typography_hairline-large
-}
-
-.typography_hairline-small {
-  @include typography_hairline-small
-}
-
-.typography_button-default {
-  @include typography_button-default
-}
-
-.typography_button-small {
-  @include typography_button-small
-}
-
-.typography_cl-gray-100 {
-  @include typography_cl-gray-100
-}
-
-.typography_cl-gray-200 {
-  @include typography_cl-gray-200
-}
-
-.typography_cl-gray-300 {
-  @include typography_cl-gray-300
-}
-
-.typography_cl-gray-400 {
-  @include typography_cl-gray-400
-}
-
-.typography_cl-gray-500 {
-  @include typography_cl-gray-500
-}
-
-.typography_cl-gray-600 {
-  @include typography_cl-gray-600
-}
-
-.typography_cl-gray-700 {
-  @include typography_cl-gray-700
-}
-
-.typography_cl-gray-800 {
-  @include typography_cl-gray-800
-}
-
-.typography_text-center {
-  @include typography_text-center
-}
-
-.typography_form-title {
-  @include typography_form-title
-}
-
-.typography_slider-title {
-  @include typography_slider-title
-}

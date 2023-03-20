@@ -13,29 +13,30 @@
   </transition>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {ref, watch} from "vue";
 
-const props = defineProps({
-  open: {
-    type: Boolean,
-    default: true,
-  },
-})
+const props = withDefaults(defineProps<{
+  open: boolean
+}>(), {open: true})
 
-const emits = defineEmits(['close'])
+const emits = defineEmits<{
+  (e:'close'): void;
+}>()
 
-const modal = ref(null);
+const modal = ref<HTMLElement>();
 
-watch(() => props.open, (val) => {
+watch(() => props.open, (val: boolean): void => {
   if (val) {
+    //@ts-ignore
     document.querySelector('html').style.overflow = 'hidden'
   } else {
+    //@ts-ignore
     document.querySelector('html').style.overflow = 'auto'
   }
 })
 
-const closeModal = function ($event) {
+const closeModal = function ($event: any): void {
   if ($event.target === modal.value) {
     emits('close')
   }
