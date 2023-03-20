@@ -20,6 +20,7 @@ const props = defineProps<{
 .list-products {
   display: grid;
   justify-items: center;
+  justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(416px, 1fr));
   grid-column-gap: 32px;
   grid-row-gap: 32px;
