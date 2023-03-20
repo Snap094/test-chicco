@@ -1,0 +1,1 @@
+import{_ as t}from"./Header.vue.f92ec207.js";import{j as c,b as n,f as a,e,z as r,o as _}from"./entry.d4ad8d81.js";import"./nuxt-link.4a0f967d.js";const d={},i={class:"global-content"},l={class:"content"},f={class:"site-content"};function m(o,p){const s=t;return _(),n("div",i,[a(s),e("div",l,[e("div",f,[r(o.$slots,"default")])])])}const B=c(d,[["render",m]]);export{B as default};
