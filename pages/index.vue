@@ -8,6 +8,23 @@
           Shop Now
         </UiButton>
       </div>
+      <div class="test">
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+        <div class="test__item">blo</div>
+      </div>
     </div>
   </main>
   <ProductsPopular/>
@@ -79,6 +96,40 @@ definePageMeta({
         text-align: left;
       }
     }
+  }
+}
+.test {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #1b4f94;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
+
+  &__item {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>
