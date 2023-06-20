@@ -1,1 +1,0 @@
-import{_ as o}from"./nuxt-link.09143a8e.js";import{a,o as s,b as n,e as _,t as r,f as c,w as p,h as i}from"./entry.3716bda0.js";const m={class:"container"},d={class:"typography_hero"},x=a({__name:"about",setup(u){return(e,h)=>{const t=o;return s(),n("div",m,[_("h1",d,r(e.$route.name),1),c(t,{to:"/"},{default:p(()=>[i("Home")]),_:1})])}}});export{x as default};
