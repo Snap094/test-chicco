@@ -124,6 +124,8 @@ definePageMeta({
 
 
   &__item {
+    flex-basis: 400px;
+    flex-shrink: 0;
     width: 300px;
     height: 300px;
     background-color: yellow;
